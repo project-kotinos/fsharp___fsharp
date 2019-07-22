@@ -2,7 +2,7 @@
 build_targets:
   - name: latest
     container:
-      - image: mono:latest
+      image: mono:latest
     commands:
      - bash ./mono/build-mono.sh 
      - bash ./mono/test-mono.sh
