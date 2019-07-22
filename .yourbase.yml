@@ -1,0 +1,13 @@
+
+build_targets:
+  - name: latest
+    container:
+      - image: mono:latest
+    commands:
+     - bash ./mono/build-mono.sh 
+     - bash ./mono/test-mono.sh
+
+ci:
+  builds:
+    - name: latest
+      build_target: latest
