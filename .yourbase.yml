@@ -2,8 +2,9 @@
 build_targets:
   - name: latest
     container:
-      image: yourbase/yb_mono:latest
+      image: yourbase/yb_ubuntu:18.04
     commands:
+     - bash ./install-mono.sh
      - bash ./mono/build-mono.sh 
      - bash ./mono/test-mono.sh
 
